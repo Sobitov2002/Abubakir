@@ -1,0 +1,31 @@
+/* Site locations */
+/* 1. css conection fonts */
+/* 2.unversial css style */
+
+@font-face {
+    font-family: MyPopins500;
+    src: url(../fonts/popins/Poppins/Poppins-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: myEdvardian;
+    src: url(../fonts/popins/Poppins/edwardianscriptitc.ttf);
+  }
+  @font-face {
+    font-family: myPopinsMedium;
+    src: url(../fonts/popins/Poppins/Poppins-Medium.ttf);
+  }
+  @font-face {
+    font-family: myPopinsRegular;
+    src: url(../fonts/popins/Poppins/Poppins-Regular.ttf);
+  }
+ 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   body{
+    font-family: MyPopins;
+    text-decoration: none;
+    list-style: none;
+   }
