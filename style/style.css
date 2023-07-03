@@ -122,6 +122,11 @@
     font-family: "myPopinsLight";
     background-color: #9024B6;
     color: #fff; 
+    transition: all 0.3s ease-in-out;
+}
+.nav_btn:hover{
+    background: rgb(152,26,210);
+    background: linear-gradient(90deg, rgba(152,26,210,1) 0%, rgba(191,22,190,1) 49%, rgba(173,36,179,1) 51%, rgba(255,0,155,0.9641106442577031) 100%);
 }
 .nav_burger{
     display: none;
@@ -143,7 +148,7 @@ footer{
     height: 150vh;
 }
 .site_header{
-    margin-top: -10px;
+    margin-top: ;
     padding-top: 120px;
 }
 
@@ -199,10 +204,13 @@ footer{
         padding-top:0px;
     }
     .nav_item-link{
+        width: 100%;
         margin: 0;
         padding: 0;
+        padding-bottom: 5px;
         text-align: center;
     }
+    
     .nav_burger{
         display: block;
         

@@ -1,7 +1,9 @@
+let navMenu = document.getElementById('navigation_items')
 window.addEventListener("scroll", function(){
     let header = this.document.getElementById('site_nav');
     if(window.scrollY > 0){
-        header.classList.add('sticky');
+        header.classList.add('sticky')
+        navMenu.style.marginTop = "35px"
     }else{
         header.classList.remove('sticky');
     }
@@ -17,7 +19,6 @@ window.addEventListener("scroll", function(){
 //     console.log("salom");
 // });
 let navBurger = document.getElementById('nav_burger');
-let navMenu = document.getElementById('navigation_items')
 let burgerIcon = document.getElementById('burger_icon')
 let number = false;
  function navburgertoggle(){
