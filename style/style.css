@@ -223,7 +223,7 @@ footer{
     }
     .nav_button{
         position: absolute;
-       bottom: -570%;
+       bottom: -75vh;
        width:60%;
        margin-left: 1p;
     }
