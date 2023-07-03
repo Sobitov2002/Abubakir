@@ -5,6 +5,7 @@
 /* 3.Start css style */
 /* 4.Start  navigation*/
 /* 5.Sticy nav javascript*/
+/* 6.Start site header section */
 
 @font-face {
     font-family: MyPopins500;
@@ -149,6 +150,88 @@ footer{
     padding-top: 120px;
 }
 
+/* +++++++++++++++ start site header section +++++++++++++++ */
+
+.site__header {
+    width: 100%;
+    height: 773px;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+
+}
+.site__header_item {
+    margin: 0 10px;
+    padding: 0 5px;
+}
+.header__info {
+}
+.header__info-title {
+    margin-top: 28px;
+    font-size: 65px;
+    font-family:myEdvardian ;
+}
+.full_name {
+    width: 400px;
+    padding: 10px 7px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: -40px;
+    font-weight: 500;
+    border-radius: 12px;
+    font-family: myPopinsMedium;
+    background-color: #9024B6;
+}
+.header__info-text {
+    margin-top: 29px;
+    margin-bottom: 0;
+    color: #9024B6;
+    font-size: 90px;
+    font-family: myPopinsMedium;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: -40px;
+}
+.header__info-paragraf {
+    margin-top: 0px;
+    color: #000;
+    font-family: myPopinsLight;
+    font-size: 90px;
+    text-transform: uppercase;
+
+
+}
+.header__person-info {
+    margin-top: -24px;
+    color: black;
+    width: 476px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: myPopinsLight;
+}
+.header__info-button {
+    width: 159px;
+    margin-top: 44px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(0deg, #9024B6 0%, #9024B6 100%), #FFF;
+}
+.header__info-button:hover{
+    background: rgb(152,26,210);
+    background: linear-gradient(90deg, rgba(152,26,210,1) 0%, rgba(191,22,190,1) 49%, rgba(173,36,179,1) 51%, rgba(255,0,155,0.9641106442577031) 100%);
+}
+.header__info_image{
+    width: 638px;
+    height: 700px;
+}
+
+
 
 /* +++++++++++++++ Web dite start css responsive +++++++++++++++*/
 @media screen and (max-width:1400px){
@@ -168,6 +251,14 @@ footer{
 @media screen and (max-width:1200px){
     .nav_item-link{
         font-size: 13px;
+    }
+    .site__header{
+        width: 90%;
+    }
+    .header__info_image{
+        width:538px;
+        height: 600px;
+
     }
 }
 @media screen and (max-width:1050px){
@@ -222,6 +313,13 @@ footer{
        margin-top: 45px;
        position: absolute;
    }
+   .header__info{
+    
+   }
+   .header__info_image{
+    width:400px;
+    height: 500px;
+   }
 }
 @media (max-width:1050px) and (min-width: 990px){
     .nav_burger{
@@ -233,6 +331,12 @@ footer{
         right: 25%;
     }
 }
+@media screen and (max-width:850px){
+    .header__info_image{
+        display: none;
+    }
+} 
+
 
 @media screen and (max-width:550px){
     .navigation_menu{
@@ -254,5 +358,27 @@ footer{
     }
     .nav_btn{
         font-size: 14px;
+    }
+    .header__info-title {
+        font-size: 50px;
+    }
+    .full_name {
+        width: 300px;
+        font-size: 25px;
+    }
+    .header__info-text {
+        font-size: 60px;
+        margin-top: 39px;
+    }
+    .header__info-paragraf {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .header__person-info {
+        font-size: 15px;
+        width: 90%;
+        margin: auto;
+    }
+    .header__info-button {
     }
 }
