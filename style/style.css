@@ -42,6 +42,8 @@
     width: 100%;
     position: fixed;
     transition: all 0.3s ease;
+    background-color: #fff;
+    z-index: 999;
     
    }
 
@@ -78,12 +80,11 @@
 .nav_item {
     margin-top: 85px;
     transition: all 0.3s ease;
-
     list-style: none;
 }
 .nav_item-link {
     white-space: nowrap;
-    padding: 11px 19px;
+    padding:10px 15px;
     color: #000;
     text-decoration: none;
     font-size: 16px;
@@ -91,11 +92,15 @@
     font-style: normal;
     font-weight: 300;
     text-transform: uppercase;
-    border-bottom: 3px solid #9024B6;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in;
 }
-.nav_item-link{
-    margin-left: 19px;
+.nav_item-link:hover{
+    position: relative;
+    left: 0;
+    border-bottom: 3px solid #9024B6;  
+}
+.nav_item-link:not(:last-child){
+    margin-left: 23px;
 }
 .nav_button {
     margin-top: 60px;
@@ -107,17 +112,22 @@
 .nav_btn {
     border-radius: 10px;
     white-space: nowrap;
-
     padding: 11px 19px;
     border: none;
     text-transform: uppercase;
     font-size: 16px;font-family: "myPopinsLight";
     background-color: #9024B6;
-    color: #fff;
-    
+    color: #fff; 
+}
+.nav_burger{
+    display: none;
+    margin-top: 60px;
+}
+.nav_burger i{
+    font-size: 30px;
 }
 
-
+/* sticy nav  */
 .sticky{
     background-color: red;
     padding-bottom: 30px;
@@ -126,10 +136,91 @@
 .sticky .nav_button{
     margin-top: 30px;
 } 
-.sticky .nav_item{
+.sticky .navigation_menu_items{
     margin-top: 35px;
 }
-
 footer{
     height: 150vh;
+}
+.site_header{
+    margin-top: -10px;
+    padding-top: 140px;
+}
+
+
+@media screen and (max-width:1400px){
+    .nav_item-link{
+        font-size: 14px;
+        padding: 11px 13px;
+    }
+    .nav_item-link:not(:last-child){
+        margin-left: 15px;
+
+    }
+    .nav_button{
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width:1200px){
+    .nav_item-link{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:1050px){
+    body{
+        overflow-x: hidden;
+    }
+    .navigation_menu_items{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        width: 300px;
+        height: 75vh;
+        right: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        transition: transform .3s ease-in;
+        transform: translateX(100%);
+    }
+    .nav_item{
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_item-link{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .nav_burger{
+        display: block;
+    }
+    .burger_active{
+       transform: translateX(0);
+    }
+
+}
+
+@media screen and (max-width:550px){
+    .navigation_menu{
+        position: relative;
+    }
+    .nav_button{
+        position: absolute;
+        bottom: -800%;
+        width: 100%;
+        margin: auto;
+    }
+    .nav_btn{
+        width: 100%;
+        margin: auto;
+    }
 }
