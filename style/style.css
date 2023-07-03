@@ -60,7 +60,7 @@
     height: 66px;
 }
 .logo_title {
-    margin-top: 60px;
+    margin-top: 35px;
     font-size: 30px;
     font-family: 'myPopinsMedium','sans-serif';
     font-style: normal;
@@ -73,18 +73,24 @@
     border-radius: 40% 10%;
     background-color: #9024B6;
 }
+.navigation_items-info{
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 .navigation_menu_items {
     display: flex;
+    margin-top: 50px;
     
 }
 .nav_item {
-    margin-top: 85px;
     transition: all 0.3s ease;
     list-style: none;
 }
 .nav_item-link {
     white-space: nowrap;
-    padding:10px 15px;
+    padding:8px 15px;
     color: #000;
     text-decoration: none;
     font-size: 16px;
@@ -103,16 +109,13 @@
     margin-left: 23px;
 }
 .nav_button {
-    margin-top: 60px;
-    margin-left: 97px;
-    border-radius: 10px;
-    height: 33px;
-    background-color: #9024B6;
+    margin-top: 35px;
+    margin-left: 50px;
 }
 .nav_btn {
     border-radius: 10px;
     white-space: nowrap;
-    padding: 11px 19px;
+    padding:8px 15px;
     border: none;
     text-transform: uppercase;
     font-size: 16px;font-family: "myPopinsLight";
@@ -121,30 +124,26 @@
 }
 .nav_burger{
     display: none;
-    margin-top: 60px;
+    margin-top: 45px;
+    margin-left: 10px;
 }
 .nav_burger i{
-    font-size: 30px;
+    font-size: 35px;
+
 }
 
 /* sticy nav  */
 .sticky{
     background-color: white;
     padding-bottom: 30px;
-}
-.sticky .logo_title,
-.sticky .nav_button{
-    margin-top: 30px;
-} 
-.sticky .navigation_menu_items{
-    margin-top: 35px;
+    box-shadow: 0px 7px 8px -3px rgba(34, 60, 80, 0.2);
 }
 footer{
     height: 150vh;
 }
 .site_header{
     margin-top: -10px;
-    padding-top: 140px;
+    padding-top: 120px;
 }
 
 
@@ -155,7 +154,6 @@ footer{
     }
     .nav_item-link:not(:last-child){
         margin-left: 15px;
-
     }
     .nav_button{
         margin-left: 50px;
@@ -195,6 +193,10 @@ footer{
         justify-content: center;
         align-items: center;
     }
+  .sticky .navigation_menu_items{
+        margin-top: 0;
+        padding-top:0px;
+    }
     .nav_item-link{
         margin: 0;
         padding: 0;
@@ -206,6 +208,12 @@ footer{
     .burger_active{
        transform: translateX(0);
     }
+   .nav_button{
+    padding: 0;
+    margin-left: 0;
+    position: absolute;
+    right: 20%;
+   }
 
 }
 
@@ -215,9 +223,9 @@ footer{
     }
     .nav_button{
         position: absolute;
-        bottom: -800%;
-        width: 100%;
-        margin: auto;
+       bottom: -970%;
+       width:60%;
+       margin-left: 1p;
     }
     .nav_btn{
         width: 100%;
