@@ -6,6 +6,7 @@
 /* 4.Start  navigation*/
 /* 5.Sticy nav javascript*/
 /* 6.Start site header section */
+/* 7.Start site About Me */
 
 @font-face {
     font-family: MyPopins500;
@@ -38,6 +39,9 @@
     list-style: none;
     font-family: MyPopins;
     text-decoration: none;
+   }
+   .active{
+    color: #9024B6;
    }
 
    /*start css style web site*/
@@ -232,6 +236,99 @@ footer{
 }
 
 
+/* +++++++++++++++ Web dite start css about me +++++++++++++++*/
+
+.aboutme_section-items {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between; 
+}
+.aboutme_section-title {
+}
+.aboutme_section-item {
+    width: 100%;
+}
+.aboutme_section-image {
+    width: 640px;
+    height: 613px;
+    position: relative;    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.aboutme_img {
+    width: 530px;
+    height: 583px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.aboutme_section-skills {
+    width: 500px;
+    padding-left: 0;
+    margin-left: 0;
+}
+.aboutme_section-text{
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+}
+.aboutme_siklls-title {
+    color: #9024B6;
+   margin-top: 40px;
+   font-size: 50px;
+   font-family: myPopinsLight;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+.aboutme_skills-paragraf {
+    margin-top: 34px;
+    color: #000;
+    font-size: 15px;
+    font-family:myPopinsLight;
+    font-weight: 400;
+}
+.skills {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+}
+.skill {
+    margin-top:30px;
+}
+.skill_title {
+    font-style: 30px;
+    font-family: myPopinsMedium;
+}
+.skill_line {
+    margin-top: 10px;
+    width:500px;
+    height: 6px;
+    position: relative;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+.line {
+    position: absolute;
+    display: block;
+    background-color: #9024B6;
+    width: 50%;
+    height: 6px;
+    border-radius: 5px;
+    left: 0;
+}
+.line i {
+    position: absolute;
+    right: -5px;
+    bottom: 50%;
+    transform: translateY(50%);
+    font-size: 19px;
+    color: rgb(228, 10, 10);
+}
+
+
 
 /* +++++++++++++++ Web dite start css responsive +++++++++++++++*/
 @media screen and (max-width:1400px){
@@ -259,6 +356,16 @@ footer{
         width:538px;
         height: 600px;
 
+    }
+    .aboutme_section-image{
+        
+    }
+    .aboutme_img{
+        width: 500px;
+        height: 513px;
+    }
+    .aboutme_section-skills{
+        width: 400px;
     }
 }
 @media screen and (max-width:1050px){
@@ -355,6 +462,29 @@ footer{
     .header__info_image{
         display: none;
     }
+    .aboutme_section-image{
+        display: none;
+    }
+    .aboutme_section-skills{
+        width: 90%;
+        margin: auto;
+    }
+    .skill_line{
+        width: 420px;
+    }
+    .aboutme_section-items{
+        margin-top: -150px;
+    }
+    .aboutme_siklls-title {
+        font-size: 40px;
+        font-style: bold;
+    }
+    .aboutme_skills-paragraf {
+        margin-top: 10px;
+        font-size: 13px;
+        
+    }
+    
 } 
 
 
@@ -400,5 +530,12 @@ footer{
         margin: auto;
     }
     .header__info-button {
+    }
+    .aboutme_section-skills{
+        width: 90%;
+        margin: auto;
+    }
+    .skill_line{
+        width: 380px;
     }
 }
