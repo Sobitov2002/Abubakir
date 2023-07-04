@@ -539,3 +539,8 @@ footer{
         width: 380px;
     }
 }
+@media screen and (max-width:400px){
+    .skill_line{
+        width: 340px;
+    }
+}
