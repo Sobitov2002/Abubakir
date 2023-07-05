@@ -701,6 +701,9 @@ footer{
         margin-top: 10px;
         list-style: none;
     }
+    .fa-brands{
+        font-size: 18px;
+    }
     .footer_bottom{
         margin-top: 50px;
     }
