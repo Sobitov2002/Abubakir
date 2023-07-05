@@ -484,7 +484,7 @@ footer{
     }
     .navigation_menu_items{
         position: absolute;
-        right: -5%;
+        right: -10%;
         top: 100%;
         margin: 0;
         padding: 0;
@@ -705,11 +705,11 @@ footer{
 
     }
     .skill_line{
-        width: 90%;
+        width: 320px;
         margin: auto;
     }
     .footer_botton-text{
-        width: 60%;
+        width: 0%;
     }
     .footer_item-link{
         font-size: 12px;
