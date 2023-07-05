@@ -484,11 +484,11 @@ footer{
     }
     .navigation_menu_items{
         position: absolute;
-        right: 0;
+        right: -5%;
         top: 100%;
         margin: 0;
         padding: 0;
-        width: 250px;
+        width: 340px;
         height: 40vh;
         display: flex;
         flex-direction: column;
