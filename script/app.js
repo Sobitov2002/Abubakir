@@ -67,10 +67,25 @@ let number = false;
 
 //Site dark/Light
 let btnDark = document.getElementById('dark')
+let sitenav = document.getElementById('site_nav')
 let darktext = document.getElementById('light')
 let body = document.getElementById('body')
+let darkNumber = true;
 
 btnDark.addEventListener('click', () => {
-    body.style.backgroundColor = '#000';
-   darktext.style.color = '#fff'
+    if (darkNumber == true){
+        body.style.backgroundColor = '#000';
+        sitenav.style.background = '#000'
+         darktext.style.color = '#fff'
+         btnDark.style.color = '#fff'
+         darkNumber = false;
+    }
+    else
+     if(darkNumber == false){
+        body.style.backgroundColor = '#fff';
+        sitenav.style.background = '#fff'
+        darktext.style.color = '#000'
+        btnDark.style.color = '#000'
+        darkNumber = true; 
+    }
 });
