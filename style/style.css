@@ -671,6 +671,9 @@ footer{
        
         height: 400px;
     }
+    .footer_section{
+        position: relative;
+    }
     .footer_text{
         width: 90%;
     }
@@ -686,10 +689,16 @@ footer{
         margin-right: 0;
     }
     .socialmedia {
-        margin-top: 20px;    
+        margin-top: 20px;  
+        position: absolute;  
+        right: 100px;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
     }
     .socialmedia_items:not(last-child){
         margin-left: 10px;
+        margin-top: 10px;
         list-style: none;
     
     }
