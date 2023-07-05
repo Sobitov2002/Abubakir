@@ -484,7 +484,7 @@ footer{
     }
     .navigation_menu_items{
         position: absolute;
-        right: -10%;
+        right: 0;
         top: 100%;
         margin: 0;
         padding: 0;
@@ -493,7 +493,7 @@ footer{
         display: flex;
         flex-direction: column;
         background-color: white;
-        transform: translateX(100%);
+        transform: translateX(110%);
         transition: transform .3s ease-in;
     }
 
@@ -690,6 +690,9 @@ footer{
     }
 }
 @media screen and (max-width:400px){
+    .navigation_menu_items{
+      
+    }
     .aboutme_siklls-title{
        font-size: 35px; 
     }
@@ -706,5 +709,8 @@ footer{
     }
     .footer_botton-text{
         width: 60%;
+    }
+    .footer_item-link{
+        font-size: 12px;
     }
 }
