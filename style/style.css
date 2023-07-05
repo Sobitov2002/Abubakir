@@ -377,6 +377,9 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 }
 
 
+footer{
+    height: 50vh;
+}
 
 /* +++++++++++++++ Web dite start css responsive +++++++++++++++*/
 @media screen and (max-width:1400px){
