@@ -478,8 +478,8 @@ footer{
 @media (min-width: 840px) and (max-width:1000px){
    .full_name{
     width: 350px;
-        font-size: 25px;
-        padding: 10px 5px;
+    font-size: 25px;
+    padding: 10px 5px;
    }
     .header__info-text{
         font-size: 70px;
