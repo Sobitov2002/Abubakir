@@ -432,7 +432,7 @@ footer{
 }
 
 .footer_bottom {
-    height:50px;
+    height:40px;
     background-color: #9024B6;
 }
 .footer_botton-text {
@@ -705,7 +705,7 @@ footer{
         padding-right: 10px;
     }
     .aboutme_section-skills{
-        margin-top: -100px;
+        margin-top: -70px;
     }
     .aboutme_siklls-title{
        font-size: 35px; 
@@ -727,9 +727,20 @@ footer{
         margin: auto;
     }
     .footer_botton-text{
-        width: 0%;
+        width: 100%;
+        padding: 10px;
+    }
+    .footer_nav-items{
+        margin-top: 20px;
+    }
+    .footer_item{
+        margin: 0;
+        padding: 0;
     }
     .footer_item-link{
+        font-size: 10px;
+    }
+    .footer_botton-text{
         font-size: 12px;
     }
 }
