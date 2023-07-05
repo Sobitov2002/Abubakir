@@ -380,13 +380,12 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 
 /* +++++++++++++++ Web dite start Footer +++++++++++++++*/
 footer{
-    width: 100%;
-    height: 339px;
+   
     background-color: #D9D9D9;
 }
 .footer_section{
     width: 90%;
-    height: 100%;
+    height: 
 }
  .footer_text{
     padding-top: 30px;
@@ -485,7 +484,7 @@ footer{
     }
     .navigation_menu_items{
         position: absolute;
-        right: 0;
+        right: -10%;
         top: 100%;
         margin: 0;
         padding: 0;
@@ -571,6 +570,9 @@ footer{
     .nav_button{
         right: 25%;
     }
+    footer{
+        margin-top: 100px;
+    }
     .footer_item{
         margin-right: 15px;
     }
@@ -603,6 +605,10 @@ footer{
         margin-top: 10px;
         font-size: 13px;
         
+    }
+   
+    .footer_item{
+        margin-top: 0;
     }
     
 } 
@@ -657,8 +663,8 @@ footer{
         width: 400px;
     }
     footer{
-        margin-top:;
-        height: 430px;
+       
+        height: 400px;
     }
     .footer_text{
         width: 90%;
@@ -670,7 +676,7 @@ footer{
     }
     .footer_item{
         width: 100%;
-        margin: 0;
+        margin: auto;
         margin-top: 10px;
         margin-right: 0;
     }
@@ -695,7 +701,8 @@ footer{
 
     }
     .skill_line{
-        width: 320px;
+        width: 90%;
+        margin: auto;
     }
     .footer_botton-text{
         width: 60%;
