@@ -236,7 +236,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     color: #9024B6;
 }
 .header__info-text {
-    margin-top: 30px;
+    margin-top: 29px;
     margin-bottom: 0;
     color: #9024B6;
     font-size: 90px;
@@ -582,6 +582,12 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     }
 }
 @media screen and (max-width:400px){
+    .aboutme_siklls-title{
+       font-size: 35px; 
+    }
+    .aboutme_section-text{
+
+    }
     .skill_line{
         width: 330px;
     }
