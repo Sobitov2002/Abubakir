@@ -39,16 +39,54 @@
     list-style: none;
     font-family: MyPopins;
     text-decoration: none;
+    cursor: none;
    }
    .active{
     color: #9024B6;
    }
 
    /*start css style web site*/
+   .cursor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+    background-color: #9024B6;
+    -webkit-box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
+-moz-box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
+box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 
+    pointer-events: none;
+   }
+   .cursor::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: #9e3cc2a3;
+    transform: translate(-50%, -50%);
+   }
+   .cursor_active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 1000;
+    pointer-events: none;
+
+   }
    nav{
     width: 100%;
-    z-index: 999;
+    z-index: 9;
     position: fixed;
     background-color: #fff;
     transition: all 0.3s ease;
@@ -91,8 +129,10 @@
 .nav_item {
     list-style: none;
     transition: all 0.3s ease;
+    
 }
 .nav_item-link {
+    cursor: none;
     color: #000;
     font-size: 16px;
     font-weight: 300;
@@ -117,6 +157,7 @@
     margin-left: 50px;
 }
 .nav_btn {
+    cursor: none;
     border: none;
     color: #fff; 
     padding:8px 15px;
@@ -147,9 +188,7 @@
     padding-bottom: 30px;
     box-shadow: 0px 7px 8px -3px rgba(34, 60, 80, 0.2);
 }
-footer{
-    height: 150vh;
-}
+
 .site_header{
     padding-top: 120px;
 }
@@ -161,15 +200,12 @@ footer{
     height: 773px;
     display: flex;
     justify-content: space-between;
-    align-items: self-start;
-
-}
+ }
 .site__header_item {
     margin: 0 10px;
     padding: 0 5px;
 }
-.header__info {
-}
+
 .header__info-title {
     margin-top: 28px;
     font-size: 65px;
@@ -177,20 +213,30 @@ footer{
 }
 .full_name {
     width: 400px;
-    padding: 10px 7px;
     color: #fff;
+    position: relative;
+    padding: 10px 7px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
-    margin-bottom: -40px;
+    margin-bottom: -30px;
     font-weight: 500;
+    z-index: 3;
     border-radius: 12px;
     font-family: myPopinsMedium;
     background-color: #9024B6;
 }
+
+.full_name:hover{
+    padding: 9px 7px;
+    border-radius: 12px;
+    border:1px solid #9024B6;
+    background-color: #FFF;
+    color: #9024B6;
+}
 .header__info-text {
-    margin-top: 29px;
+    margin-top: 30px;
     margin-bottom: 0;
     color: #9024B6;
     font-size: 90px;
@@ -217,6 +263,7 @@ footer{
     font-family: myPopinsLight;
 }
 .header__info-button {
+    cursor: none;
     width: 159px;
     margin-top: 44px;
     padding: 5px 10px;
@@ -224,11 +271,13 @@ footer{
     border: none;
     font-size: 16px;
     color: white;
-    background: linear-gradient(0deg, #9024B6 0%, #9024B6 100%), #FFF;
+    background-color: #9024B6;
 }
 .header__info-button:hover{
-    background: rgb(152,26,210);
-    background: linear-gradient(90deg, rgba(152,26,210,1) 0%, rgba(191,22,190,1) 49%, rgba(173,36,179,1) 51%, rgba(255,0,155,0.9641106442577031) 100%);
+    padding: 4px 10px;
+    color: #9024B6;
+    background-color: #FFF;
+    border:1px solid #9024B6;
 }
 .header__info_image{
     width: 638px;
@@ -237,14 +286,15 @@ footer{
 
 
 /* +++++++++++++++ Web dite start css about me +++++++++++++++*/
-
+.about-me{
+    height: 773px;
+}
 .aboutme_section-items {
   width: 100%; 
   display: flex;
   justify-content: space-between; 
 }
-.aboutme_section-title {
-}
+
 .aboutme_section-item {
     width: 100%;
 }
@@ -357,9 +407,7 @@ footer{
         height: 600px;
 
     }
-    .aboutme_section-image{
-        
-    }
+    
     .aboutme_img{
         width: 500px;
         height: 513px;
@@ -386,6 +434,7 @@ footer{
         transform: translateX(100%);
         transition: transform .3s ease-in;
     }
+
     .nav_item{
         margin: 0;
         padding: 0;
@@ -419,9 +468,6 @@ footer{
        margin-left: 0;
        margin-top: 45px;
        position: absolute;
-   }
-   .header__info{
-    
    }
    .header__info_image{
     width:400px;
@@ -528,8 +574,6 @@ footer{
         font-size: 15px;
         width: 90%;
         margin: auto;
-    }
-    .header__info-button {
     }
     .aboutme_section-skills{
         width: 90%;

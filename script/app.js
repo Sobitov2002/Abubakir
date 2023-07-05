@@ -1,13 +1,42 @@
+//site cursor events create.
+let cursor = document.getElementById('cursor');
+let timeOut;
+
+window.addEventListener('mousemove', function(e){
+    let xtop = e.pageX;
+    let yleft = e.pageY;
+   
+    cursor.style.top =  yleft  + 'px';
+    cursor.style.left = xtop  + 'px';
+    cursor.style.display  = 'block';
+    
+
+    function mouseStopped(){
+        cursor.style.display = 'none';
+    }
+    timeOut = setTimeout(mouseStopped , 10000)
+
+    window.addEventListener('mouseout', () =>{
+        cursor.style.display = 'none';
+    })
+})
+
+
 let navMenu = document.getElementById('navigation_items')
 window.addEventListener("scroll", function(){
     let header = this.document.getElementById('site_nav');
     if(window.scrollY > 0){
+        cursor.classList.add('cursor_active');
         header.classList.add('sticky')
         navMenu.style.marginTop = "35px"
     }else{
         header.classList.remove('sticky');
+        cursor.classList.remove('cursor_active');
+
     }
 })
+
+
 
 
 // let navBurger = document.getElementById('nav_burger')
