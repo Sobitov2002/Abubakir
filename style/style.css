@@ -385,7 +385,7 @@ footer{
     background-color: #D9D9D9;
 }
 .footer_section{
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
  .footer_text{
@@ -654,7 +654,7 @@ footer{
         margin: auto;
     }
     .skill_line{
-        width: 380px;
+        width: 400px;
     }
     footer{
         margin-top:;
@@ -669,7 +669,7 @@ footer{
         margin: auto;
     }
     .footer_item{
-        width: 90%;
+        width: 100%;
         margin: 0;
         margin-top: 10px;
         margin-right: 0;
@@ -696,5 +696,8 @@ footer{
     }
     .skill_line{
         width: 320px;
+    }
+    .footer_botton-text{
+        width: 60%;
     }
 }
