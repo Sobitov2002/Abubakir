@@ -751,6 +751,9 @@ footer{
     .footer_item-link{
         font-size: 10px;
     }
+    .fa-brands{
+        font-size: 15px;
+    }
     .footer_botton-text{
         font-size: 12px;
     }
