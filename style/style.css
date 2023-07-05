@@ -657,10 +657,16 @@ footer{
         width: 380px;
     }
     footer{
+        margin-top:;
         height: 430px;
+    }
+    .footer_text{
+        width: 90%;
     }
     .footer_nav-items{
         display: block;
+        width: 90%;
+        margin: auto;
     }
     .footer_item{
         width: 90%;
