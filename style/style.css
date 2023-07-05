@@ -45,6 +45,9 @@
    .active{
     color: #9024B6;
    }
+   .dark{
+    color: white;
+   }
 
    /*start css style web site*/
    .cursor{

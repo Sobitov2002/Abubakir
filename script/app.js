@@ -63,3 +63,14 @@ let number = false;
     number = false;
    }
  }
+
+
+//Site dark/Light
+let btnDark = document.getElementById('dark')
+let darktext = document.getElementById('light')
+let body = document.getElementById('body')
+
+btnDark.addEventListener('click', () => {
+    body.style.backgroundColor = '#000';
+   darktext.style.color = '#fff'
+});
