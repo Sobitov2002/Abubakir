@@ -690,6 +690,9 @@ footer{
     }
 }
 @media screen and (max-width:400px){
+    body{
+        overflow-x: hidden;
+    }
     .navigation_menu_items{
       right: -10%;
       height: 60%;
