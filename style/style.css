@@ -51,7 +51,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    display: block;
+    display: none;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -286,9 +286,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 
 
 /* +++++++++++++++ Web dite start css about me +++++++++++++++*/
-.about-me{
-    height: 773px;
-}
+
 .aboutme_section-items {
   width: 100%; 
   display: flex;
