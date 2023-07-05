@@ -585,10 +585,14 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     .aboutme_siklls-title{
        font-size: 35px; 
     }
+    .aboutme_skills-paragraf{
+        margin-top: 28px;
+        width: 330px;
+    }
     .aboutme_section-text{
 
     }
     .skill_line{
-        width: 330px;
+        width: 320px;
     }
 }
