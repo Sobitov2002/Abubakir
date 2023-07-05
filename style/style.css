@@ -489,7 +489,7 @@ footer{
         margin: 0;
         padding: 0;
         width: 340px;
-        height: 40vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
@@ -699,7 +699,7 @@ footer{
         overflow-x: hidden;
     }
     .navigation_menu_items{
-      
+      height: ;
     }
     .nav_item{
         padding-right: 10px;
