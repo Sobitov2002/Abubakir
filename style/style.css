@@ -7,6 +7,7 @@
 /* 5.Sticy nav javascript*/
 /* 6.Start site header section */
 /* 7.Start site About Me */
+/* 8.Start site Footer*/
 
 @font-face {
     font-family: MyPopins500;
@@ -377,8 +378,69 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 }
 
 
+/* +++++++++++++++ Web dite start Footer +++++++++++++++*/
 footer{
-    height: 50vh;
+    width: 100%;
+    height: 339px;
+    background-color: #D9D9D9;
+}
+.footer_section{
+    width: 100%;
+    height: 100%;
+}
+ .footer_text{
+    padding-top: 30px;
+}
+
+.footer_nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_item{
+    margin-top: 40px;
+    margin-right: 57px;
+    list-style: none;
+    white-space: nowrap;
+}
+.footer_item-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: myPopinsLight;
+    text-transform: uppercase;
+}
+.socialmedia {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.socialmedia_items:not(last-child){
+    margin-left: 26px;
+    list-style: none;
+
+}
+.socialmedia_item {
+    text-decoration: none;
+    cursor: none;
+}
+.fa-brands {
+    font-size: 34px;
+    color: black;
+}
+
+.footer_bottom {
+    height:50px;
+    background-color: #9024B6;
+}
+.footer_botton-text {
+    color: #FFF;
+    font-size: 18px;
+    align-items: center;
+    font-family: myPopinsLight;
 }
 
 /* +++++++++++++++ Web dite start css responsive +++++++++++++++*/
@@ -475,6 +537,11 @@ footer{
     height: 500px;
    }
 }
+@media screen and (max-width:1000px) {
+    .footer_item{
+        margin-right: 30px;
+    }
+}
 @media (min-width: 840px) and (max-width:1000px){
    .full_name{
     width: 350px;
@@ -503,6 +570,12 @@ footer{
 @media screen and (max-width:800px){
     .nav_button{
         right: 25%;
+    }
+    .footer_item{
+        margin-right: 15px;
+    }
+    .footer_item-link{
+        font-size: 15px;
     }
 }
 @media screen and (max-width:850px){
@@ -582,6 +655,16 @@ footer{
     }
     .skill_line{
         width: 380px;
+    }
+    footer{
+        height: 430px;
+    }
+    .footer_nav-items{
+        display: block;
+    }
+    .footer_item{
+        margin-top: 10px;
+        margin-right: 0;
     }
 }
 @media screen and (max-width:400px){
