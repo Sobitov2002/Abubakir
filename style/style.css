@@ -126,9 +126,10 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-family: 'myPopinsMedium','sans-serif';
 }
 .logo_circle {
-    color: var(--primary-color);
+    color: white;
     border-radius: 40% 10%;
     background-color: #9024B6;
+    
 }
 .navigation_items-info{
     display: flex;
