@@ -248,7 +248,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     padding: 9px 7px;
     border-radius: 12px;
     border:1px solid #9024B6;
-    background-color: #fff
+    background-color: #fff;
     color: #9024B6;
 }
 .header__info-text {
@@ -401,7 +401,7 @@ footer{
 }
 .footer_section{
     width: 90%;
-    height: 
+     
 }
  .footer_text{
     padding-top: 30px;
