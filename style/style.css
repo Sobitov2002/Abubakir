@@ -32,12 +32,12 @@
  
  
   :root{
-    --primary-color: white;
-    --dark-color: black;
+    --primary-color: #1A1919;
+    --dark-color: white;
   }
   .dark_site{
-    --primary-color:#1A1919;
-    --dark-color: white;
+    --primary-color: white;
+    --dark-color: #1A1919;
   }
 
 
@@ -247,8 +247,8 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 .full_name:hover{
     padding: 9px 7px;
     border-radius: 12px;
-    border:1px solid #9024B6;
-    background-color: #fff;
+    border:1.5px solid #9024B6;
+    background-color: #1A1919;
     color: #9024B6;
 }
 .header__info-text {
@@ -374,7 +374,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     position: relative;
     background-color: rgb(101, 98, 98);
     border-radius: 5px;
-    animation: animated .8s forwards;
 }
 @keyframes animated {
     0%{

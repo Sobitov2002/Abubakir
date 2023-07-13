@@ -69,7 +69,7 @@ let number = false;
 let btnDark = document.getElementById('dark');
 let bd = document.getElementById('body')
 let darkNumber = true;
-
+bd.style.backgroundColor = '#1A1919'
 btnDark.onclick = function(e){
     e.preventDefault();
     document.body.classList.toggle('dark_site')
@@ -80,20 +80,12 @@ btnDark.onclick = function(e){
         btnDark.textContent = "DARK"
     }
     if(darkNumber == true){
-        bd.style.backgroundColor = '#1A1919'
+        bd.style.backgroundColor = 'white'
         darkNumber = false;
     }
     else {
-        bd.style.backgroundColor = 'White';
+        bd.style.backgroundColor = '#1A1919';
         darkNumber = true;
     }
 }
 
-
-
-
-
- let scrollY 
-window.addEventListener("scroll", ()=>{
-    console.log(scrollY);
-})
