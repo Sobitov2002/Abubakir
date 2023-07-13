@@ -374,12 +374,20 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     position: relative;
     background-color: rgb(101, 98, 98);
     border-radius: 5px;
+    animation: animated .8s forwards;
+}
+@keyframes animated {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .line {
     position: absolute;
     display: block;
     background-color: #9024B6;
-    width: 50%;
     height: 6px;
     border-radius: 5px;
     left: 0;
@@ -392,6 +400,60 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-size: 19px;
     color: rgb(228, 10, 10);
 }
+
+.html{
+    animation: html 2s forwards;
+}
+.script{
+    animation: script 2s forwards;
+}
+.vue{
+    animation: vue 2s forwards;
+}
+.react{
+    animation: react 2s forwards;
+}
+@keyframes html {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 80%;
+        opacity: 1;
+    }
+}
+@keyframes script {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 50%;
+        opacity: 1;
+    }
+}
+@keyframes vue {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 45%;
+        opacity: 1;
+    }
+}
+@keyframes react {
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+    100%{
+        width: 55%;
+        opacity: 1;
+    }
+}
+
 
 
 /* +++++++++++++++ Web dite start Footer +++++++++++++++*/
@@ -753,7 +815,7 @@ footer{
 
     }
     .skill_line{
-        width: 320px;
+        width: 300px;
         margin: auto;
     }
     .footer_botton-text{

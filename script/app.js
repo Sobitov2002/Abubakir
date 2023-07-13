@@ -88,3 +88,12 @@ btnDark.onclick = function(e){
         darkNumber = true;
     }
 }
+
+
+
+
+
+ let scrollY 
+window.addEventListener("scroll", ()=>{
+    console.log(scrollY);
+})
