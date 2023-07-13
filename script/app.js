@@ -66,26 +66,25 @@ let number = false;
 
 
 //Site dark/Light
-let btnDark = document.getElementById('dark')
-let sitenav = document.getElementById('site_nav')
-let darktext = document.getElementById('light')
-let body = document.getElementById('body')
+let btnDark = document.getElementById('dark');
+let bd = document.getElementById('body')
 let darkNumber = true;
 
-btnDark.addEventListener('click', () => {
-    if (darkNumber == true){
-        body.style.backgroundColor = '#000';
-        sitenav.style.background = '#000'
-         darktext.style.color = '#fff'
-         btnDark.style.color = '#fff'
-         darkNumber = false;
+btnDark.onclick = function(e){
+    e.preventDefault();
+    document.body.classList.toggle('dark_site')
+    if(btnDark.textContent == 'DARK'){
+        btnDark.textContent = "LIGHT"
     }
-    else
-     if(darkNumber == false){
-        body.style.backgroundColor = '#fff';
-        sitenav.style.background = '#fff'
-        darktext.style.color = '#000'
-        btnDark.style.color = '#000'
-        darkNumber = true; 
+    else{
+        btnDark.textContent = "DARK"
     }
-});
+    if(darkNumber == true){
+        bd.style.backgroundColor = '#1A1919'
+        darkNumber = false;
+    }
+    else {
+        bd.style.backgroundColor = 'White';
+        darkNumber = true;
+    }
+}
