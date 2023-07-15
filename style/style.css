@@ -455,7 +455,11 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     }
 }
 /* +++++++++++++++ Web dite start services +++++++++++++++*/
-
+.blok_active{
+    display: block;
+    color: #1A1919;
+    background-color: #9e3cc2a3;
+}
 .services {
 }
 .contanier {
@@ -463,6 +467,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 .services_section {
     width: 100%;
     height: 800px;
+    align-items: center;
 }
 .sevices_title {
     
@@ -481,18 +486,51 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-weight: 500;
 
 }
+.services_items{
+    display: flex;
+    flex-direction: column;
+}
 .services_item_one , .services_item_two{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-left: -0px;
 }
 .services_item{
     list-style: none;
     width: 500px;
     height: 184px;
     background-color: #fff;
-    margin: 10px 20px;
+    margin: 10px 10px;
     border-radius: 20px;
     border: 2px solid #9024B6;
+}
+.item_text {
+    color: #9024B6;
+    font-size: 23px;
+    font-family: myPopinsLight;
+    display: flex;
+    justify-content: center;
+}
+.item_info {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.item_info-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+.item_info-paragraf {
+    width: 60%;
+    margin-top: 10px;
+    margin-right: 18px;
+    font-size: 13px;
+    font-family: serif;
+    font-family: myPopinsLight;
+
 }
 
 /* +++++++++++++++ Web dite start Footer +++++++++++++++*/
@@ -745,6 +783,7 @@ footer{
     }
     .services_section{
         margin-top: 3rem;
+        margin-left: -1rem;
     }
     .services_tiitle-paragraf{
         font-size: 40px;
@@ -757,7 +796,10 @@ footer{
         height: 160px;
         margin: 0;
         margin: auto;
-        margin-top: 20px 0;
+        margin-top: 20px;
+    }
+    .item_info-paragraf{
+        width: 80%;
     }
     
 } 
@@ -854,6 +896,20 @@ footer{
     .services_tiitle-paragraf{
         font-size: 35px;
     }
+    .item_info-img {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+    .item_info-paragraf {
+        width: 60%;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        font-family: serif;
+        font-family: myPopinsLight;
+    
+    }
 }
 @media screen and (max-width:400px){
     body{
@@ -909,5 +965,23 @@ footer{
     }
     .services_tiitle-paragraf{
         font-size: 30px;
+    }
+    .item_info-img {
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+        background-size: cover;
+    }
+    .item_info-paragraf {
+        width: 60%;
+        margin-top: 10px;
+        margin-right: 9px;
+        font-size: 10px;
+       
+    }
+}
+@media screen and (max-width:350px){
+    .item_info-paragraf{
+        font-size: 8px;
     }
 }
