@@ -8,6 +8,7 @@
 /* 6.Start site header section */
 /* 7.Start site About Me */
 /* 8.Start site Services */
+/* 9.Start site Contact Me */
 /* .Start site Footer*/
 
 @font-face {
@@ -504,7 +505,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     margin: 10px 10px;
     border-radius: 20px;
     border: 2px solid #9024B6;
-    background-color: #bbbbbb;
+    background-color: #e3e3e3;
 
 }
 .item_text {
@@ -534,6 +535,116 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-family: myPopinsLight;
 
 }
+
+
+/* +++++++++++++++ Web dite start Contact Me +++++++++++++++*/
+
+.contactme {
+   
+    height: 740px;
+}
+
+.contactMe_info {
+}
+.contactMe_title {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--dark-color);
+    font-family: myPopinsLight;
+
+}
+.contactMe_text {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    color: #9024B6;
+    font-family: myPopinsLight;
+
+}
+.contactMe_paragraf {
+    width: 876px;
+    height: 80px;
+    margin-top: 50px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--dark-color);
+    font-family: myPopinsLight;
+
+}
+.contactMe_items {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.contactMe_item {
+    width: 40%;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+.forms input{
+    width: 90%;
+    height: 49px;
+    margin: auto;
+    margin-top:30px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 22px;
+    font-size: 15px;
+    font-family: myPopinsLight;
+    background-color: #e3e3e3;
+}
+.forms textarea{
+    width: 90%;
+    margin: auto;
+    margin-top:30px;
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: myPopinsLight;
+    background-color: #e3e3e3;
+
+}
+.Person_info {
+    color: var(--dark-color);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+.bold{
+    font-weight: 700;
+}
+
+.Person_title {
+    margin-top:30px;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+    color: #9024B6;
+}
+.person_text {
+    margin-top: 15px;
+}
+.person_number {
+    margin-top: 15px;
+}
+.person_email {
+    margin-top: 10px;
+
+}
+.person_adres {
+    margin-top: 20px;
+}
+
+
+
 
 /* +++++++++++++++ Web dite start Footer +++++++++++++++*/
 footer{
@@ -638,6 +749,41 @@ footer{
         width: 450px;
         margin: 10px 10px;
     }
+    .contactMe_title {
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--dark-color);
+        font-family: myPopinsLight;
+    
+    }
+    .contactMe_text {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        color: #9024B6;
+        font-family: myPopinsLight;
+    
+    }
+    .contactMe_paragraf {
+        width: 576px;
+        height: 60px;
+        margin: 0;
+        margin-top: 40px;
+        font-size: 15px;
+      
+    }
+    .forms input{
+        width: 80%;
+        height: 40px;
+        
+    }
+    .forms textarea{
+        width: 80%;
+    }
+    .Person_info{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width:1050px){
     body{
@@ -709,6 +855,28 @@ footer{
     .services_item{
         width: 400px;
     }
+    .contactme{
+        margin-top: 100px;
+    }
+    .contactMe_items{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactMe_item{
+        width: 80%;
+        margin: auto;
+    }
+    .forms input{
+        width: 70%;
+        height: 40px;
+        
+    }
+    .forms textarea{
+        width: 70%;
+    }
+    .Person_info{
+        font-size: 15px;
+    }
 }
 @media (min-width: 840px) and (max-width:1000px){
    .full_name{
@@ -729,6 +897,7 @@ footer{
     .header__person-info{
         width: 370px;
     }
+   
 }
 @media (max-width:1050px) and (min-width: 990px){
     .nav_burger{
@@ -802,6 +971,35 @@ footer{
     }
     .item_info-paragraf{
         width: 80%;
+    }
+    .contactme{
+        margin-top: 100px;
+    }
+    .contactMe_text {
+        font-size: 30px;
+    }
+    .contactMe_paragraf {
+        width: 80%;
+        margin: auto;
+    }
+    .contactMe_items{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactMe_item{
+        width: 90%;
+        margin: auto;
+    }
+    .forms input{
+        width: 90%;
+        height: 40px;
+        
+    }
+    .forms textarea{
+        width: 90%;
+    }
+    .Person_info{
+        font-size: 13px;
     }
     
 } 
@@ -911,6 +1109,27 @@ footer{
         font-family: serif;
         font-family: myPopinsLight;
     
+    }
+    .contactMe_text{
+        font-size: 25px;
+    }
+    .contactMe_paragraf{
+        font-size: 12px;
+    }
+    .contactMe_item{
+        width: 100%;
+        margin: auto;
+    }
+    .forms input{
+        width: 100%;
+        height: 40px;
+        
+    }
+    .forms textarea{
+        width: 100%;
+    }
+    .Person_info{
+        font-size: 10px;
     }
 }
 @media screen and (max-width:400px){
