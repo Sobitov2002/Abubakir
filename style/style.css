@@ -1385,8 +1385,13 @@ footer{
         font-size: 10px;
        
     }
+   
     .portfolio_items{
+        height: 300px;
         width: 500%;
+    }
+    .portfolio_controller{
+        margin-top: 30px;
     }
 }
 @media screen and (max-width:350px){
