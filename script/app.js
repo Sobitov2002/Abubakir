@@ -89,3 +89,31 @@ btnDark.onclick = function(e){
     }
 }
 
+
+
+
+
+let slider = document.querySelector('.portfolio_items'),
+    lin1 = document.querySelector('.lin1'),
+    lin2 = document.querySelector('.lin2'),
+    lin3 = document.querySelector('.lin3'),
+    lin4 = document.querySelector('.lin4'),
+    sliderImg = document.querySelector('#slider_img')
+    sliderActive = document.querySelector('.controller_active');
+
+    lin1.addEventListener('click', function(){
+        slider.style.transform = 'translateX(0%)';
+        sliderActive.style.left = 0;
+    })
+    lin2.addEventListener('click', function(){
+        slider.style.transform = 'translateX(-25%)';
+        sliderActive.style.left = '80px';
+    })
+    lin3.addEventListener('click', function(){
+        slider.style.transform = 'translateX(-50%)';
+        sliderActive.style.left = '160px';
+    })
+    lin4.addEventListener('click', function(){
+        slider.style.transform = 'translateX(-75%)';
+        sliderActive.style.left = '240px';
+    })
