@@ -1392,6 +1392,7 @@ footer{
     }
     .portfolio_controller{
         margin-top: 30px;
+        width: 310px;
     }
 }
 @media screen and (max-width:350px){
