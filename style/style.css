@@ -690,16 +690,19 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     display: flex;
     height: 750px;
 }
+.frendanimation{
+    transition: all 1s ease;
+}
 .frends_items{
     width: 90%;
     margin: auto;
     margin-right: 75px;
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-   
+   transition: all 1s ease;
 }
 .frends_item{
     width: 280px;
@@ -711,6 +714,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     align-items: center;
     border-radius: 15px;
     border: 2px solid white;
+    transition: all .3s ease;
 }
 .frends_item-img {
     width: 120px;
@@ -1175,6 +1179,13 @@ footer{
         font-size: 14px;
     }
 }
+@media screen and (max-width:950px){
+    .frends_item{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+     }
+}
 @media screen and (max-width:850px){
     .header__info_image{
         display: none;
@@ -1198,13 +1209,10 @@ footer{
     }
     .aboutme_skills-paragraf {
         margin-top: 10px;
-        font-size: 13px;
-        
+        font-size: 13px;  
     }
-    .frends_items{
-        display: grid;
-        grid-template-columns: calc((100% / 2) - px);
-    }
+   
+   
    
     .footer_item{
         margin-top: 0;

@@ -118,3 +118,31 @@ let slider = document.querySelector('.portfolio_items'),
         slider.style.transform = 'translateX(-75%)';
         sliderActive.style.left = '240px';
     })
+
+
+
+
+    /*frend section show btn */
+    let showBtn = document.getElementById('frenbtn'),
+        frendsContent = document.getElementById('fren')
+        frenIcon = document.getElementById('frenIcon'),
+        frentwo = document.getElementById('frentwo');
+        shownumber  = true;
+        showBtn.addEventListener('click', function(){
+            if(shownumber == true){
+                frendsContent.style.display = 'flex';
+                frenIcon.classList.remove('fa-chevron-down');
+                frenIcon.classList.add('fa-chevron-up');
+                frentwo.style.display = 'flex';
+                frentwo.classList.add('frendanimation');
+                shownumber = false;
+            }
+            else if(shownumber == false){
+                frenIcon.classList.remove('fa-chevron-up');
+                frenIcon.classList.add('fa-chevron-down');
+                frendsContent.style.display = 'none';
+                frentwo.style.display = 'none';
+                shownumber = true;
+            }
+        })
+
