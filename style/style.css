@@ -991,11 +991,14 @@ footer{
     width:400px;
     height: 500px;
    }
+   .slider{
+    width: 100%;
+   }
    .portfolio_items {
     width: 400%;
 }
 .portfolio_item {
-    width: 300px;
+    width: 50%;
 }
 .portfolio_info-text{
     font-size: 35px;
@@ -1198,6 +1201,9 @@ footer{
         bottom: 0px;
      }
      .portfolio_item-info{
+        font-size: 13px;
+    }
+    .portfolio_info-paragraf{
         font-size: 13px;
     }
     
