@@ -576,7 +576,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     height: 510px;
     margin: auto;
     overflow: hidden;
-    background-color: #000000d2;
+    background-color: #9024B6;
     border-radius: 10px;
     padding: 10px 20px;
 }
@@ -603,25 +603,25 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     padding: 10px;
 }
 .portfolio_item_title {
-    color: var(--dark-color);
+    color: white;
     font-size: 40px;
     font-family: myPopinsLight;
 }
 .portfolio_item-info {
-    color: var(--dark-color);
+    color: white;
     font-size: 14px;
     font-family: myPopinsLight;
     margin-top: 30px;
 }
 .portfolio_item-button {
-    color: var(--dark-color);
+    color: black;
     position: absolute;
     bottom: 5px;
     padding: 5px 20px;
     border-radius: 10px;
     font-family: myPopinsLight;
     text-decoration: none;
-    background-color: #9024B6;
+    background-color: white;
 }
 
 .portfolio_iframe {
@@ -992,13 +992,13 @@ footer{
     height: 500px;
    }
    .slider{
-    width: 100%;
+    width: 90%;
    }
    .portfolio_items {
-    width: 400%;
+    width: 415%;
 }
 .portfolio_item {
-    width: 50%;
+    width: 60%;
 }
 .portfolio_info-text{
     font-size: 35px;
@@ -1428,6 +1428,9 @@ footer{
         width: 335px;
         height: 350px;
      }
+     .portfolio_item-info{
+       width: 80%;
+    }
      .portfolio_more{
         padding: 5px;
      }
