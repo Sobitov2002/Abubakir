@@ -603,6 +603,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     padding: 10px;
 }
 .portfolio_item_title {
+    width: 80%;
     color: white;
     font-size: 40px;
     font-family: myPopinsLight;
@@ -1465,6 +1466,6 @@ footer{
      }
      .slider{
         width: 300px;
-        height: 400px;
+        height: 350px;
      }
 }
