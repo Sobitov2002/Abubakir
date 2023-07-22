@@ -1450,6 +1450,7 @@ footer{
         bottom: 100px;
      }
      .slider{
+        width: 330px;
         height: 400px;
      }
 }
