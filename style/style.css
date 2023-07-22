@@ -1412,14 +1412,18 @@ footer{
         width: 310px;
     }
     .portfolio_item-info{
+        margin-top: 0;
         font-size: 10px;
     }
     .portfolio_item-button{
         bottom: 100px;
      }
      .slider{
-        width: 350px;
-        height: 400px;
+        width: 335px;
+        height: 350px;
+     }
+     .portfolio_more{
+        padding: 5px;
      }
 }
 @media screen and (max-width:350px){
