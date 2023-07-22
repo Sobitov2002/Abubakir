@@ -10,6 +10,7 @@
 /* 8.Start site Services */
 /* 9.Start site Contact Me */
 /* 10.start site Portfolio*/
+/* 11.start site Frends Me*/
 /* .Start site Footer*/
 
 @font-face {
@@ -540,6 +541,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 
 .portfolio {
     width: 100%;
+    margin-top: -100px;
     margin-bottom: 100px;
 }
 .portfolio_info {
@@ -665,6 +667,95 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     transition: all .5s ease;
 }
 
+/* +++++++++++++++ Web dite start Frends Me +++++++++++++++*/
+
+.frendsMe{
+    width: 100%;
+}
+.frendsBtn {
+    width: 200px;
+    padding: 10px;
+    color: white;
+    font-family: myPopinsLight;
+    background-color: #9024B6;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.frendsBtn i{
+    font-size: 20px;
+    padding-top: 2px;
+}
+.frend{
+    display: flex;
+    height: 750px;
+}
+.frends_items{
+    width: 90%;
+    margin: auto;
+    margin-right: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+   
+}
+.frends_item{
+    width: 280px;
+    height: 300px;
+    background-color: #9024B6;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+.frends_item-img {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 3px solid #9024B6;
+}
+.frends_item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--dark-color);
+
+}
+.frends_item-title {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: myPopinsLight;
+    color: white;
+
+}
+.frends_item-paragraf {
+    font-family: myPopinsLight;
+    color: white;
+    font-size: 13px;
+}
+.frends_item-info{
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+}
+.frends_item-social{
+    margin-top: 20px;
+}
+.frends_item-social a{
+    cursor: pointer;
+    margin: 5px;
+}
+.frends_item-social > a >i{
+    font-size: 19px;
+    color: white;
+}
 
 
 
@@ -1109,6 +1200,10 @@ footer{
         margin-top: 10px;
         font-size: 13px;
         
+    }
+    .frends_items{
+        display: grid;
+        grid-template-columns: calc((100% / 2) - px);
     }
    
     .footer_item{
