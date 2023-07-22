@@ -67,7 +67,8 @@ let number = false;
 
 //Site dark/Light
 let btnDark = document.getElementById('dark');
-let bd = document.getElementById('body')
+let bd = document.getElementById('body'),
+    sliderblok = document.getElementsByClassName('.slider');
 let darkNumber = true;
 bd.style.backgroundColor = '#1A1919'
 btnDark.onclick = function(e){
