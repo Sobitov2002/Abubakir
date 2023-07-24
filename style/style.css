@@ -1311,10 +1311,11 @@ footer{
     }
     .nav_button{
        position: absolute;
-       left: 0px;
-       width:100%;
+       left: 50%;
+       width: 100%;
        margin: auto;
        bottom: -80vh;
+       transform: translateX(-15%);
     }
     .nav_btn{
         width: 100%;
