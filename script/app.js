@@ -138,3 +138,6 @@ let slider = document.querySelector('.portfolio_items'),
             }
         })
 
+
+        
+
