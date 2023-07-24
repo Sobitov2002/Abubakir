@@ -1,7 +1,15 @@
+/*
+1.site cursor events create
+2.sticy navigation
+3.navigation burger 
+4.Site dark/Light
+5.portfolio scroll animation
+6.frend section show btn
+*/ 
+
 //site cursor events create.
 let cursor = document.getElementById('cursor');
 let timeOut;
-
 window.addEventListener('mousemove', function(e){
     let xtop = e.pageX;
     let yleft = e.pageY;
@@ -21,7 +29,7 @@ window.addEventListener('mousemove', function(e){
     })
 })
 
-
+//sticy navigation
 let navMenu = document.getElementById('navigation_items')
 window.addEventListener("scroll", function(){
     let header = this.document.getElementById('site_nav');
@@ -36,17 +44,7 @@ window.addEventListener("scroll", function(){
     }
 })
 
-
-
-
-// let navBurger = document.getElementById('nav_burger')
-// let navMenu = document.getElementsByClassName('.navigation_menu_items')
-// console.log(navMenu)
-
-// navBurger.addEventListener("click", function(){
-//     navMenu.classList.add('fa-xmark');
-//     console.log("salom");
-// });
+//navigation burger 
 let navBurger = document.getElementById('nav_burger');
 let burgerIcon = document.getElementById('burger_icon')
 let number = false;
@@ -90,10 +88,7 @@ btnDark.onclick = function(e){
     }
 }
 
-
-
-
-
+//portfolio scroll animation
 let slider = document.querySelector('.portfolio_items'),
     lin1 = document.querySelector('.lin1'),
     lin2 = document.querySelector('.lin2'),
@@ -119,10 +114,7 @@ let slider = document.querySelector('.portfolio_items'),
         sliderActive.style.left = '240px';
     })
 
-
-
-
-    /*frend section show btn */
+  //frend section show btn 
     let showBtn = document.getElementById('frenbtn'),
         frendsContent = document.getElementById('fren')
         frenIcon = document.getElementById('frenIcon'),

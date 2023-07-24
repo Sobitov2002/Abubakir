@@ -11,7 +11,8 @@
 /* 9.Start site Contact Me */
 /* 10.start site Portfolio*/
 /* 11.start site Frends Me*/
-/* .Start site Footer*/
+/* 12.Start site Footer*/
+/* 13.Start site Media responsive*/
 
 @font-face {
     font-family: MyPopins500;
@@ -44,7 +45,6 @@
     --dark-color: #1A1919;
   }
 
-
   *{
     margin: 0;
     padding: 0;
@@ -64,6 +64,7 @@
    }
 
    /*start css style web site*/
+
    .cursor{
     display: flex;
     justify-content: center;
@@ -76,8 +77,8 @@
     z-index: 1000;
     background-color: #9024B6;
     -webkit-box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
--moz-box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
-box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
+    -moz-box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
+    box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 
     pointer-events: none;
    }
@@ -208,13 +209,11 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     padding-bottom: 30px;
     box-shadow: 0px 7px 8px -3px rgba(34, 60, 80, 0.2);
 }
-
 .site_header{
     padding-top: 120px;
 }
 
 /* +++++++++++++++ start site header section +++++++++++++++ */
-
 .site__header {
     width: 100%;
     height: 773px;
@@ -272,8 +271,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-family: myPopinsLight;
     font-size: 90px;
     text-transform: uppercase;
-
-
 }
 .header__person-info {
     margin-top: -24px;
@@ -404,7 +401,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-size: 19px;
     color: rgb(228, 10, 10);
 }
-
 .html{
     animation: html 2s forwards;
 }
@@ -417,6 +413,7 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 .react{
     animation: react 2s forwards;
 }
+
 @keyframes html {
     0%{
         width: 0;
@@ -457,37 +454,30 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
         opacity: 1;
     }
 }
+
 /* +++++++++++++++ Web dite start services +++++++++++++++*/
 .blok_active{
     display: block;
     color: #1A1919;
     background-color: #9e3cc2a3;
 }
-.services {
-}
-.contanier {
-}
 .services_section {
     width: 100%;
     height: 800px;
     align-items: center;
 }
-.sevices_title {
-    
-}
 .services_title-text {
-    color: var(--dark-color);
     font-size: 17px;
-    font-family:myPopinsLight ;
-    font-style: normal;
     font-weight: 700;
+    font-style: normal;
+    color: var(--dark-color);
+    font-family:myPopinsLight ;
 }
 .services_tiitle-paragraf {
     font-size: 50px;
+    font-weight: 500;
     color: #9024B6;
     font-family:myPopinsLight;
-    font-weight: 500;
-
 }
 .services_items{
     display: flex;
@@ -495,27 +485,26 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 }
 .services_item_one , .services_item_two{
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: -0px;
+    align-items: center;
+    justify-content: center;
 }
 .services_item{
     list-style: none;
     width: 500px;
     height: 184px;
-    background-color: #fff;
     margin: 10px 10px;
     border-radius: 20px;
+    background-color: #fff;
     border: 2px solid #9024B6;
     background-color: #e3e3e3;
-
 }
 .item_text {
-    color: #9024B6;
-    font-size: 23px;
-    font-family: myPopinsLight;
     display: flex;
+    font-size: 23px;
+    color: #9024B6;
     justify-content: center;
+    font-family: myPopinsLight;
 }
 .item_info {
     width: 100%;
@@ -537,8 +526,8 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-family: myPopinsLight;
 
 }
-/* +++++++++++++++ Web dite start Portfolio +++++++++++++++*/
 
+/* +++++++++++++++ Web dite start Portfolio +++++++++++++++*/
 .portfolio {
     width: 100%;
     margin-top: -100px;
@@ -549,21 +538,21 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     margin: auto;
 }
 .portfolio_info-title {
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
     color: var(--dark-color);
     text-transform: uppercase;
     font-family: myPopinsLight;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 700;
 }
 .portfolio_info-text{
+    font-size: 50px;
     margin-top: 40px;
+    font-weight: 500;
+    font-style: normal;
     color: var(--dark-color);
     text-transform: uppercase;
     font-family: myPopinsLight;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 500;
 }
 .portfolio_info-paragraf {
     margin-top: 20px;
@@ -669,7 +658,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 
 
 /* +++++++++++++++ Web dite start Frends Me +++++++++++++++*/
-
 .animation{
     transition: all 1s ease;
 }
@@ -784,18 +772,10 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     color: white;
 }
 
-
-
-
-
-
 /* +++++++++++++++ Web dite start Contact Me +++++++++++++++*/
 
 .contactme {
     height: 740px;
-}
-
-.contactMe_info {
 }
 .contactMe_title {
     font-size: 17px;
@@ -803,7 +783,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-weight: 700;
     color: var(--dark-color);
     font-family: myPopinsLight;
-
 }
 .contactMe_text {
     font-size: 50px;
@@ -811,7 +790,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-weight: 500;
     color: #9024B6;
     font-family: myPopinsLight;
-
 }
 .contactMe_paragraf {
     width: 876px;
@@ -822,7 +800,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     font-weight: 400;
     color: var(--dark-color);
     font-family: myPopinsLight;
-
 }
 .contactMe_items {
     width: 70%;
@@ -863,7 +840,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     padding-top: 20px;
     font-family: myPopinsLight;
     background-color: #e3e3e3;
-
 }
 .Person_info {
     color: var(--dark-color);
@@ -874,7 +850,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 .bold{
     font-weight: 700;
 }
-
 .Person_title {
     margin-top:30px;
     font-size: 33px;
@@ -890,7 +865,6 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
 }
 .person_email {
     margin-top: 10px;
-
 }
 .person_adres {
     margin-top: 20px;
@@ -906,17 +880,12 @@ box-shadow: 1px 0px 26px 22px rgba(144, 36, 182, 0.29);
     color: var(--primary-color);
 }
 
-
-
-
 /* +++++++++++++++ Web dite start Footer +++++++++++++++*/
 footer{
-   
     background-color: var(--primary-color);
 }
 .footer_section{
     width: 90%;
-     
 }
  .footer_text{
     padding-top: 30px;
@@ -946,12 +915,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .socialmedia_items:not(last-child){
     margin-left: 26px;
     list-style: none;
-
 }
 .socialmedia_item {
     text-decoration: none;
@@ -968,7 +935,8 @@ footer{
 }
 .footer_botton-text {
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
+    padding-top: 10px;
     align-items: center;
     font-family: myPopinsLight;
 }
@@ -998,9 +966,7 @@ footer{
     .header__info_image{
         width:538px;
         height: 600px;
-
     }
-    
     .aboutme_img{
         width: 500px;
         height: 513px;
@@ -1018,7 +984,6 @@ footer{
         font-weight: 700;
         color: var(--dark-color);
         font-family: myPopinsLight;
-    
     }
     .contactMe_text {
         font-size: 40px;
@@ -1026,7 +991,6 @@ footer{
         font-weight: 500;
         color: #9024B6;
         font-family: myPopinsLight;
-    
     }
     .contactMe_paragraf {
         width: 576px;
@@ -1034,12 +998,10 @@ footer{
         margin: 0;
         margin-top: 40px;
         font-size: 15px;
-      
     }
     .forms input{
         width: 80%;
-        height: 40px;
-        
+        height: 40px; 
     }
     .forms textarea{
         width: 80%;
@@ -1073,7 +1035,6 @@ footer{
         transform: translateX(100%);
         transition: transform .3s ease-in;
     }
-
     .nav_item{
         margin: 0;
         padding: 0;
@@ -1150,7 +1111,6 @@ footer{
     .forms input{
         width: 70%;
         height: 40px;
-        
     }
     .forms textarea{
         width: 70%;
@@ -1335,10 +1295,8 @@ footer{
     }
     .portfolio_info-paragraf{
         font-size: 13px;
-    }
-    
+    }  
 } 
-
 
 @media screen and (max-width:550px){
     .navigation_menu{
@@ -1471,9 +1429,6 @@ footer{
     body{
         overflow-x: hidden;
     }
-    .navigation_menu_items{
-      
-    }
     .nav_item{
         padding-right: 10px;
     }
@@ -1491,9 +1446,6 @@ footer{
     }
     .skills{
         margin-top: 5px;
-    }
-    .aboutme_section-text{
-
     }
     .skill_line{
         width: 300px;
@@ -1533,7 +1485,6 @@ footer{
         margin-top: 10px;
         margin-right: 9px;
         font-size: 10px;
-       
     }
     .portfolio_item-button{
        bottom: 120px;
