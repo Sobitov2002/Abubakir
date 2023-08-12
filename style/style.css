@@ -300,7 +300,7 @@
 }
 .header__info_image{
     width: 638px;
-    height: 700px;
+    height: 500px;
 }
 
 
@@ -323,11 +323,12 @@
 
 }
 .aboutme_img {
-    width: 530px;
-    height: 583px;
+    width: 510px;
+    height: 563px;
     position: absolute;
     top: 0;
     right: 10px;
+    border-radius: 50%;
 }
 .aboutme_section-skills {
     width: 500px;
@@ -973,7 +974,7 @@ footer{
     }
     .aboutme_img{
         width: 500px;
-        height: 513px;
+        height: 13px;
     }
     .aboutme_section-skills{
         width: 400px;
